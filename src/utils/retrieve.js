@@ -2,6 +2,7 @@
 
 import fetch from 'cross-fetch'
 import { XMLParser } from 'fast-xml-parser'
+import { Buffer } from 'node:buffer';
 
 const profetch = async (url, options = {}) => {
   const { proxy = {}, signal = null } = options
